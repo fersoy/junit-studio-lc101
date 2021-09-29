@@ -10,7 +10,7 @@ public class BalancedBracketsTest {
     //TODO: add tests here
     @Test
     public void emptyTest() {
-        assertEquals(true, true);
+        assertTrue(true);
     }
 
 
@@ -19,12 +19,8 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]"));
     }
     @Test
-    public void singleLeftBracketsReturnsFalse() {
+    public void singleBracketsReturnsFalse() {
         assertFalse(BalancedBrackets.hasBalancedBrackets("["));
-    }
-    @Test
-    public void singleRightBracketsReturnsFalse() {
-        assertFalse(BalancedBrackets.hasBalancedBrackets("]"));
     }
     @Test
     public void unbalancedBracketsReturnsFalse() {
@@ -60,5 +56,6 @@ public class BalancedBracketsTest {
     public void balancedBracketsInStringsReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]LaunchCode"));
     }
+
 
 }
